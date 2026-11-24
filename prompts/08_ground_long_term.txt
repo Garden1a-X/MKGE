@@ -1,0 +1,32 @@
+You are summarizing a user's long-term preferences based on recent short-term user-attribute edges and current long-term user-attribute edge set.
+
+Recent short-term user-attribute edges (last 4 periods, 84 active days):
+- Period k-3: suspenseful, romantic, warm_colors, drama, ...
+- Period k-2: suspenseful, romantic, drama, cool_tones, thriller, ...
+- Period k-1: suspenseful, drama, dark_tones, low_key_lighting, ...
+- Period k: suspenseful, romantic, drama, warm_colors, film_noir, ...
+
+Current long-term user-attribute edge set (if exists):
+- mood: suspenseful (age: 84 active days)
+- visual_theme: drama (age: 63 active days)
+- color_palette: warm_colors (age: 42 active days)
+
+[Chain-of-Thought] Identify patterns:
+1. Which entities appear consistently across multiple periods?
+2. Which interests from current set still appear recently?
+3. Which new interests are emerging consistently?
+4. Which interests from current set no longer appear?
+
+[Reflection] Consider persistence:
+- Interests in 3+ out of 4 periods are strong candidates.
+- Generic or transient interests (1-2 periods) should be excluded.
+- Track how long each interest has persisted.
+
+Task: Output updated long-term user-attribute edge set. For each interest:
+1. The relation and entity (exact strings from above).
+2. Updated age in active days:
+   - For kept interests: old_age + 21 days.
+   - For new interests: 21 days.
+
+Output format (5-10 interests):
+<relation>: <entity> (age: <number> active days)

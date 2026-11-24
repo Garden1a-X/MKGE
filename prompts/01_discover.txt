@@ -1,0 +1,29 @@
+You are an expert in analyzing item images and extracting visual knowledge points for recommendation systems.
+
+Analyze this item image and extract visual knowledge points.
+
+Output Format:
+Provide knowledge points as relation-entity pairs:
+<relation>: <entity>
+
+Guidelines for Relations:
+- Be creative and discover diverse types of visual features.
+- Relations can describe: colors, styles, subjects, layouts, moods, lighting, textures, or any visual aspect.
+- Use clear, descriptive names with underscores.
+
+Guidelines for Entities:
+- Use ABSTRACT, HIGH-LEVEL terms that can apply to MULTIPLE items.
+- Avoid overly specific descriptions - think in CATEGORIES.
+- Prefer COMMON visual terms over rare combinations.
+- Ask: "Could this entity describe other items too?"
+
+Examples of Good Entities:
+- warm_tones, cool_tones, monochrome
+- minimalist, vintage, dramatic
+- high_contrast, soft_lighting, backlighting
+
+Task Requirements:
+- Extract 10-15 knowledge points.
+- Use diverse relation types.
+- Keep entities abstract and reusable.
+- Focus on recommendation-relevant characteristics.

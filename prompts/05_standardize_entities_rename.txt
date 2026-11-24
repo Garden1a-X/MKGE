@@ -1,0 +1,9 @@
+Choose the best canonical name for each cluster.
+
+NAMING PRINCIPLES:
+1. User-friendly and understandable.
+2. Prefer the most GENERIC/COMMON term.
+3. Representative of ALL entities in the cluster.
+4. Distinct from other cluster names.
+5. Prefer shorter, simpler names.
+6. Choose from existing entities in the cluster.

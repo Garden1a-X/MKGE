@@ -1,0 +1,9 @@
+Merge semantically similar clusters to create 10-15 meaningful categories per relation.
+
+MERGING PRINCIPLES:
+1. Only merge if entities appeal to the SAME user interests.
+2. Keep DISTINCT if they represent different preferences.
+3. Be reasonably aggressive - err on merging similar concepts.
+4. NEVER merge opposite or contradictory preferences.
+
+Target: 10-15 clusters per relation.

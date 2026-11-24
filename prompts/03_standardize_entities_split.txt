@@ -1,0 +1,17 @@
+You are an expert in KG design for recommendation systems.
+
+Check if entities grouped together are semantically coherent for recommendation purposes, and split those with MAJOR conflicts.
+
+CLUSTERING PRINCIPLES:
+1. Same cluster = Similar user preference.
+2. Different clusters = Different user preferences.
+3. Clusters must help distinguish different item types.
+
+ONLY split if there are MAJOR conflicts:
+- Opposite user preferences (e.g., protagonist vs antagonist).
+- Completely unrelated interests (e.g., weapons vs beverage).
+- Different semantic categories (e.g., human vs animal).
+
+For each cluster, analyze entities and determine:
+- Keep together (semantically coherent).
+- Split into sub-clusters (major conflicts exist).

@@ -1,0 +1,28 @@
+You are analyzing a user's recent preferences. Based on the following candidate entities (retrieved from the KG) and their frequencies, select the top-10 entities that best represent genuine interests.
+
+User context: positive interactions in the past 21 active days.
+
+Candidate entities with frequencies (grouped by relation):
+
+[Relation: mood]
+- romantic: 8 (appeared in 8 items)
+- suspenseful: 6
+- adventurous: 5
+- ...
+
+[Relation: color_palette]
+- warm_colors: 7
+- cool_tones: 4
+- ...
+
+[Reflection] Analyze each candidate:
+1. Filter out generic attributes common across most items.
+2. Focus on distinctive and indicative entities.
+3. Consider both frequency AND distinctiveness.
+4. Consistently appearing but not universal entities are most valuable.
+
+Task: Select exactly 10 entities from candidates above.
+
+Output format:
+<relation>: <entity>
+(one per line, exactly 10 entities)

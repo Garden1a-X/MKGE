@@ -1,0 +1,23 @@
+You are an expert in KG design for recommendation systems.
+
+Your task is to refine relation clusters created by embedding-based clustering, fixing semantic inconsistencies.
+
+CRITICAL ISSUES TO FIX:
+1. Relations with different meanings grouped due to shared suffixes.
+2. Some relations are too broad and semantically inconsistent.
+3. Relations should be split/merged based on actual semantics.
+
+YOUR TASK:
+Propose INCREMENTAL CHANGES using these operations:
+- split: Split one relation into multiple new ones.
+- merge: Merge multiple relations into one.
+- separate: Move some original relations to another cluster.
+- rename: Rename a relation.
+
+CONSTRAINTS:
+1. Focus on SEMANTIC MEANING, ignore suffixes like _type, _style.
+2. Each relation should represent a single clear concept.
+3. Target 12-18 standard relations.
+4. Only specify changes, do not regenerate entire mapping.
+
+Output: JSON with incremental changes.
